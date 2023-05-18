@@ -49,11 +49,22 @@ body {
   height: 100%;
 }
 
+.perfume-img {
+  border-top-left-radius: 5%;
+  border-bottom-left-radius: 5%;
+}
+
+.perfume-img-mob {
+  display: none;
+}
+
 .perfume {
   width: calc(100% / 2);
   height: 100%;
   padding: 20px;
   background-color: var(--White);
+  border-top-right-radius: 5%;
+  border-bottom-right-radius: 5%;
 }
 
 .perf-word {
@@ -105,6 +116,51 @@ button:hover {
   background-color: var(--Very_dark_blue);
 }
 
+.perfume-img:hover {
+  filter: grayscale(25%);
+  -ms-filter: grayscale(25%);
+  -webkit-filter: grayscale(25%);
+}
 button img {
   margin-right: 10px;
+}
+
+/* Mobile Design */
+
+@media (min-width: 375px) and (max-width: 1023px) {
+  .parent {
+    flex-direction: column;
+    height: fit-content;
+    width: 335px;
+  }
+  .parent img {
+    width: 100%;
+  }
+  .perfume-img {
+    display: none;
+  }
+  .perfume-img-mob {
+    display: block;
+    border-top-right-radius: 5%;
+    border-top-left-radius: 5%;
+    height: calc(100% / 2);
+    width: 100%;
+  }
+  .perfume {
+    height: calc(100% / 2);
+    width: 100%;
+    border-bottom-right-radius: 5%;
+    border-bottom-left-radius: 5%;
+  }
+
+  h2 {
+    line-break: auto;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1044px) {
+  .perfume {
+    border-top-right-radius: 5%;
+    border-bottom-right-radius: 5%;
+  }
 }
