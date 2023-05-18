@@ -159,6 +159,10 @@ button img {
 }
 
 @media (min-width: 1024px) and (max-width: 1044px) {
+
+  .parent {
+    flex-direction: row;
+  }
   .perfume {
     border-top-right-radius: 5%;
     border-bottom-right-radius: 5%;
