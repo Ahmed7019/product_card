@@ -31,6 +31,9 @@
 body {
   font-family: montserrat;
   background-color: var(--Cream);
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
 }
 
 .parent {
@@ -41,7 +44,6 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin: 50px auto;
 }
 
 .parent img {
@@ -110,6 +112,7 @@ button {
   border-radius: 10px;
   background-color: var(--Dark_cyan);
   color: var(--White);
+  cursor: pointer;
 }
 
 button:hover {
@@ -159,7 +162,6 @@ button img {
 }
 
 @media (min-width: 1024px) and (max-width: 1044px) {
-
   .parent {
     flex-direction: row;
   }
